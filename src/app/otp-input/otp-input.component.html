@@ -1,0 +1,47 @@
+<div class="flex-box">
+  <form [formGroup]="otpForm" (ngSubmit)="onSubmit()">
+    <div formArrayName="code" class="otp-inputs" (paste)="onPaste($event)">
+      <mat-form-field
+        *ngFor="let ctrl of codeControls; let i = index"
+        appearance="outline"
+      >
+        <input
+          #inputEl
+          matInput
+          type="text"
+          inputmode="numeric"
+          maxlength="1"
+          [formControlName]="i"
+          (input)="onInput($event, i)"
+          (keydown)="onBackspace($event, i)"
+          [attr.aria-label]="'Code digit ' + (i + 1)"
+        />
+      </mat-form-field>
+    </div>
+
+    <div class="error-messages" *ngIf="submitted">
+      <div *ngIf="otpForm.errors?.['codeMissing']">
+        Bitte geben Sie den Validierungscode ein.
+      </div>
+      <div *ngIf="otpForm.errors?.['codeUnknown']">
+        Der Validierungscode ist unvollständig.
+      </div>
+      <div *ngIf="otpForm.errors?.['codeExpired']">
+        Der Validierungscode ist abgelaufen oder ungültig.
+      </div>
+    </div>
+
+    <button mat-raised-button color="primary" type="submit">Absenden</button>
+    <div class="resend-section">
+      <button
+        mat-button
+        type="button"
+        [disabled]="timeLeft > 0"
+        (click)="resendCode()"
+      >
+        Code erneut senden
+      </button>
+      <span *ngIf="timeLeft > 0"> (in {{ timeLeft }}s erneut möglich) </span>
+    </div>
+  </form>
+</div>
