@@ -3,6 +3,8 @@
 [![Angular](https://img.shields.io/badge/angular-v19-red.svg?logo=angular)](https://angular.io)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Live Demo](https://img.shields.io/badge/demo-StackBlitz-blue)](https://stackblitz.com/~/github.com/mariokreitz/otpInputs-with-materialDesign)
+[![pages-build-deployment](https://github.com/mariokreitz/otpInputs-with-materialDesign/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/mariokreitz/otpInputs-with-materialDesign/actions/workflows/pages/pages-build-deployment)
+[![Deploy Angular App to GitHub Pages](https://github.com/mariokreitz/otpInputs-with-materialDesign/actions/workflows/deploy.yml/badge.svg)](https://github.com/mariokreitz/otpInputs-with-materialDesign/actions/workflows/deploy.yml)
 
 A lightweight, customizable OTP (One-Time Password) input component for Angular using Angular Material. Supports single-digit inputs, full-code pasting, error handling, and validation on submit.
 
