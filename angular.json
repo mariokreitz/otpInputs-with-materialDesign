@@ -37,7 +37,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/mariokreitz/",
+              "baseHref": "/otpInputs-with-materialDesign/",
               "budgets": [
                 {
                   "type": "initial",
