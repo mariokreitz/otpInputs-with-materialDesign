@@ -103,8 +103,3 @@ MIT © \[Mario Kreitz]
 Got suggestions or improvements? Open a PR or issue!
 
 ---
-
-```
-
-Would you like me to create a real StackBlitz demo and upload the screenshot for you?
-```
