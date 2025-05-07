@@ -37,7 +37,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/otpInputs-with-materialDesign/",
+              "baseHref": "/otpInputs-with-materialDesign/browser/",
               "budgets": [
                 {
                   "type": "initial",
